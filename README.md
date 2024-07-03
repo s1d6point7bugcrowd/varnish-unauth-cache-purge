@@ -8,7 +8,7 @@ This .yaml checks if a Varnish Cache server is vulnerable to unauthenticated cac
 
 - **ID**: varnish-unauth-cache-purge
 - **Name**: Varnish Unauthenticated Cache Purge
-- **Severity**: High
+- **Severity**: Medium
 - **Description**: Checks if it is possible to purge Varnish cache without authentication.
 
 
