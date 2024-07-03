@@ -10,9 +10,7 @@ This script checks if a Varnish Cache server is vulnerable to unauthenticated ca
 - **Name**: Varnish Unauthenticated Cache Purge
 - **Severity**: High
 - **Description**: Checks if it is possible to purge Varnish cache without authentication.
-- **References**:
-  - [Example Reference](https://www.example.com/varnish-unauth-purge-vuln)
-- **Tags**: varnish, purge, cve
+
 
 Key Components:
 
