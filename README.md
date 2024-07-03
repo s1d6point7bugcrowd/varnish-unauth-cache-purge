@@ -2,7 +2,7 @@
 
 ## Description
 
-This script checks if a Varnish Cache server is vulnerable to unauthenticated cache purge attacks. Varnish Cache is a web application accelerator that caches HTTP requests to improve performance. If the PURGE method is not properly authenticated, it can allow attackers to clear the cache without any authentication, leading to potential performance degradation and information disclosure risks.
+This .yaml checks if a Varnish Cache server is vulnerable to unauthenticated cache purge attacks. Varnish Cache is a web application accelerator that caches HTTP requests to improve performance. If the PURGE method is not properly authenticated, it can allow attackers to clear the cache without any authentication, leading to potential performance degradation and information disclosure risks.
 
 ## Vulnerability Details
 
