@@ -5,8 +5,7 @@ info:
   author: s1d6p01nt7
   severity: high
   description: Checks if it is possible to purge Varnish cache without authentication.
-  reference:
-    - https://www.example.com/varnish-unauth-purge-vuln
+ 
   tags: varnish,purge,cve
 
 requests:
