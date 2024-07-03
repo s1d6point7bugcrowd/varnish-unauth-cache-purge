@@ -3,7 +3,7 @@ id: varnish-unauth-cache-purge
 info:
   name: Varnish Unauthenticated Cache Purge
   author: s1d6p01nt7
-  severity: high
+  severity: medium
   description: Checks if it is possible to purge Varnish cache without authentication.
  
   tags: varnish,purge,cve
